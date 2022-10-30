@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number guessing game</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Number Guessing game</h1>
+        <div class="top">
+            <h2>Game rules</h2>
+            <ul>
+                <li>An integer between 0-100 is randomly generated.</li>
+                <li>You get <strong> 5 guesses </strong> to guess the right integer.</li>
+                <li>No letters, floats or special characters are allowed. Good luck!</li>
+            </ul>
+        </div>
+        <div class="middle">
+            <section class="left">
+                <input type="text" name="input-field" id="input-field" placeholder="Enter your integer here..">
+                <button>GUESS</button>   
+            </section>
+            <section class="right">
+                <span class="counter">
+                    Guesses left
+                    <p></p>
+                </span>
+            </section>
+        </div>
+        <div class="bottom">
+            <span class="too-high-low">
+
+            </span>
+            <h2 class="prev-guess-title">Previous guesses:</h2>
+            <ol class="prev-answer-list">
+            </ol>
+        </div>
+        <div class="modal-container" id="modal-container">
+            <div class="modal">
+                <h3 class="modal-header"></h3>
+                <p class="modal-text"></p>
+                <button class="play-again">Play again!</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
