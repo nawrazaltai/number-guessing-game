@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+
+html {
+    min-height: 100%;
+}
+
 body {
     position: relative;
     margin:0;
@@ -16,6 +21,7 @@ body::before {
     position: absolute;
     background-image: url('wp.png');
     background-size: auto;
+    height: auto;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -283,4 +289,81 @@ ol.prev-answer-list{
 
 .modal button:hover {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.6rem;
+        width: 100vw;
+        text-align: center;
+    }
+    
+    body::before {
+        height: 150%;
+        /* background-size: cover; */
+    }
+
+    .top {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .top ul li {
+        font-size: .9rem;
+    }
+
+    input {
+        width: 80vw;
+        height: 3em;
+        border:3px solid rgb(70, 63, 161);
+        border-radius: 3px;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: 'Orbitron';
+        letter-spacing: 0.15em;
+        font-weight: 700;
+        color:rgb(70, 63, 161);
+    }
+
+    .middle {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .middle section{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80vw;
+        height: 2.5em;        
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .counter {
+        height: 15vh;
+        width: 80vw;
+    }
+
+    .middle p {
+        margin-bottom: 0;
+    }
+
+    .too-high-low {
+        width: 60vw;
+    }
+
+    .bottom {
+        width: 100vw;
+        align-items: center;
+    }
+     
+    h2 {
+        font-size: 1rem;
+    }
 }
